@@ -25,6 +25,52 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 15px 30px;
+  position: fixed;
+  background: transparent;
+
+  z-index: 2;
+  
+}
+
+.header-title {
+  text-decoration: none;
+}
+
+.header-title h1 {
+  color: var(--color-white);
+  font-size: 2rem;
+}
+
+.header-title h1:hover {
+  opacity: .8;
+}
+
+.navbar {
+  max-width: 350px;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
 #person {
   height: 100vh;
   width: 100%;
@@ -322,9 +368,9 @@ body {
   margin: 1rem 0.5rem;  
 }
 
-.button-cta button {
+.button-cta a {
   display: inline-block;
-  white: 70%;
+  white: 100%;
   max-width: 172px;
   padding: 10px;
   margin: 2rem;
@@ -332,11 +378,15 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   letter-spacing: 0.15rem;
+  color: var(--color-black);
+  background: var(--color-white);
+  text-align: center;
+  text-decoration: none;
   border-radius: 10px;
   cursor: pointer;
 
 } 
-.button-cta button:houver {
+.button-cta a:houver {
   transition: all 3s ease;
   filter: brightness(.8);
 
@@ -548,6 +598,26 @@ body {
   transition: color 0.3s ease;
   color: var(--color-blue);
 }
+
+#footer {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  margin-top: auto;
+  background: #191919;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color-white);
+}
+
+
 
 @keyframes written_text {
   100% {
