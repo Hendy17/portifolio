@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="styles.css">
@@ -34,25 +35,28 @@
   <!-- Person  -->
   <section id="person">
     <div class="person-content">
-      <div>
-        <h1>Oi<span></span></h1>
-        <h1>Meu<span></span></h1>
-        <h1>Nome é,<span></span></h1>
-        <h1>Hëndy Vorpagél<span></span></h1>
+      <div class="flex">
+        <div>
+          <h1>Oi<span></span></h1>
+          <h1>Meu<span></span></h1>
+          <h1>Nome é,<span></span></h1>
+          <h1>Hëndy Vorpagél<span></span></h1>
+        </div>  
       </div>
       <div class="person-name">        
         <div class="stacks-content">
           <!-- Conteúdo da stacks-content aqui -->
           <h3>Techs</h3>
           <div class="stacks">
-            <ul>
-              <li>
-                <div data="HTML">
-                  <img src="./svg/html.svg" alt="html-icon">
-                </div>
-              </li>
-            </ul>
-
+            <div class="flex">
+              <ul>
+                <li>
+                  <div data="HTML">
+                    <img src="./svg/html.svg" alt="html-icon">
+                  </div>
+                </li>
+              </ul>
+            </div>    
             <ul>
               <li>
                 <div data="CSS">
@@ -91,7 +95,9 @@
 
     <div class="person-background">
       <div class="wrapper-profile-photo">
-        <img class="profile-photo" src="./img/foto-hendy.jpg" alt="foto-hendy">
+        <div class="flex">
+          <img class="profile-photo" src="./img/foto-hendy.jpg" alt="foto-hendy">
+        </div>  
       </div>
       <div class="Links">
         <a href="https://github.com/Hendy17" target="_blank">        
