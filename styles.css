@@ -26,8 +26,13 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0; 
   overflow-x: hidden; 
+  font-size: 1rem;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 #header {
   display: flex;
@@ -144,6 +149,11 @@ body {
 .person-content div h1:nth-child(4) span {
   animation-delay: 3s;
 }
+.person-flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
 .person-name {
   margin-top: 11rem;
   
@@ -203,6 +213,10 @@ body {
   border-radius: 5px;
 
 }
+.flex {
+  align-items: center;
+  gap: 60px;
+}
 
 .person-background {  
   height: 100vh;
@@ -260,6 +274,11 @@ body {
   width: 100%;   
 }
 
+.flex {
+  align-items: center;
+  gap: 60px;
+}
+
 .Links a img {
   max-width: 100%;
   height: auto;
@@ -286,6 +305,10 @@ body {
   color: var(--color-white);
 }
 
+.flex {
+  align-items: center;
+  gap: 60px;
+}
 .backgrond-about {
   width: 50%;
   height: 100%;
@@ -341,6 +364,11 @@ body {
   border-radius: 4px;
   color: var(--color-black);
   background: var(--color-white);
+}
+
+.flex {
+  align-items: center;
+  gap: 60px;
 }
 
 .box-about {
@@ -426,7 +454,7 @@ body {
   flex-direction: row;
   height: 500px;
   margin-top: 2rem;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .card-project {
@@ -454,12 +482,11 @@ body {
 }
 
 .content-project {
-    height: 100%;
-    width: 100%;    
-    display: flex;
-    flex-direction: column;
-    
-    z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
 }
 
 .image-project {
@@ -473,13 +500,10 @@ body {
 }
 
 .image-project img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 30px;
-  position: absolute;
-  top: 0;
-  left: 0;
   border: 2px solid var(--color-white);
   transition: transform 0.3s ease-out;
   cursor: pointer;
@@ -531,18 +555,26 @@ body {
 
 /*Final do Project*/
 
+#contacts-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  width: 100%;
+}
+
 #contacts {
   display: flex;
-  flex-direction;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
   height: 40vh;
-  width: 100%;
-
   background: var(--color-black);
 }
 
 .contact-icon-content h2 {
-  margin: 3rem 3rem 3rem 3rem;
-  padding: 1rem 1rem 1rem 1rem;
+  margin: 3rem;
+  padding: 1rem;
   font-size: 3rem;
   color: var(--color-white);
 }
@@ -550,15 +582,15 @@ body {
 .contact-icons-wrapper {
   display: flex;
   align-items: center;
-  flex-direction: row; 
+  flex-direction: row;
   font-size: 3rem;
 }
 
 .contact-icon-contact {
-  display: flex; 
+  display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0rem 3rem;
+  margin: 1rem;
   padding: 1rem;
 }
 
@@ -593,11 +625,10 @@ body {
 
 .contact-info a {
   display: block;
-  margin: .25rem 0rem;
+  margin: 0.25rem 0rem;
   font-size: 1.5rem;
   text-decoration: none;
   color: var(--color-white);
-
 }
 
 .contact-info a:hover {
@@ -648,15 +679,33 @@ body {
   } 
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1200px) {
+  /* Estilos para telas menores que 600px de largura (exemplo) */
+  body {
+    font-size: 14px; /* Ajuste o tamanho da fonte para dispositivos móveis */
+  }
+
+  .navbar, .header-title {
+    display: none; /* Esconder a navegação e o título do cabeçalho */
+  }
+
+  /* Adicione ou ajuste estilos conforme necessário para telas menores que 600px */
+}
+
+@media screen and (max-width: 1200px) {
   .flex {
     flex-direction: column;
   }
 
-  
-  .navbar, .header-title {
-    display: none;
+  .navbar {
+    display: none; /* Esconder a navegação em telas menores que 1200px */
   }
-}  
+
+  .header-title {
+    font-size: 18px; /* Ajuste o tamanho da fonte do título do cabeçalho para telas menores que 1200px */
+    /* Adicione ou ajuste estilos conforme necessário para telas menores que 1200px */
+  }
+}
+
 
 
