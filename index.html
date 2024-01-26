@@ -4,10 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+  />
+  <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" 
+  />
 
   <link rel="stylesheet" href="styles.css">
-  <title>Portfólio</title>
+  <title>Portfólio - Hëndy Vorpagél</title>
 </head>
 <body>
   <!-- Header  -->
@@ -136,50 +143,79 @@
     <div class="projects-title">
       <h2>PROJETOS 👨🏼‍💻</h2>
     </div>
-    <div class="wrapper-projects">
-      <div class="card-project">
-        <div class="content-project">
-          <div class="image-project">
-            <img src="img/Project-Time.png" alt="Projeto-Time">
+  
+    <div class="container-projects">
+      <div class="swiper-mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Projeto 1 -->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <img src="img/Project-Time.png" alt="Projeto-Time">
+            </div>
+            <span>Time 1</span>
+            <p>Esse projeto cronometra às tarefas em projetos</p>
+            <div class="cta-project">
+              <a href="https://github.com/Hendy17/time" target="_blank">
+                Código
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="" target="_blank">
+                Site
+                <i class="fas fa-arrow-up-right"></i>
+              </a>
+            </div>
           </div>
-          <span>Time</span>
-          <p>Esse projeto cronometras tarefas</p>
-          <div class="cta-project">
-            <a href="https://github.com/Hendy17/time">
-              Código
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="">
-              Site
-              <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
+  
+          <!-- Projeto 2 -->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <img src="img/Project-Time.png" alt="Projeto-Time">
+            </div>
+            <span>Time 2</span>
+            <p>Esse projeto cronometra às tarefas em projetos</p>
+            <div class="cta-project">
+              <a href="https://github.com/Hendy17/time" target="_blank">
+                Código
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="" target="_blank">
+                Site
+                <i class="fas fa-arrow-up-right"></i>
+              </a>
+            </div>
           </div>
+  
+          <!-- Projeto 3 -->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <img src="img/Project-Time.png" alt="Projeto-Time">
+            </div>
+            <span>Time 3</span>
+            <p>Esse projeto cronometra às tarefas em projetos</p>
+            <div class="cta-project">
+              <a href="https://github.com/Hendy17/time" target="_blank">
+                Código
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="" target="_blank">
+                Site
+                <i class="fas fa-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Adicionar mais projetos conforme necessário -->
         </div>
-      </div>
-      <div class="card-project">
-        <div class="content-project">
-          <div class="image-project">
-            <img src="img/Project-Time.png" alt="Projeto-Time">
-          </div>
-          <span>Rede Social</span>
-          <p>Esse projeto simula um Facebook</p>
-          <div class="cta-project">
-            <a href="https://github.com/Hendy17/AulaInicialaReact">
-              Código
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="/">
-              Site
-              <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-        </div>
+  
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
-  </section>
+  </section> 
   <!-- End Projects -->
   
-
+  
+  <!-- Contacts -->
   <section id="contacts">
     <div class="contact-icon-content">
       <h2>Contato 📞</h2>
@@ -208,6 +244,7 @@
         </div>
     </div>
   </section>
+  <!-- End Contacts -->
 
   <!-- Footer-->
   <section id="footer">
@@ -217,8 +254,14 @@
     </div>
 
   </section>
-  <!--End Footer-->
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <!-- Initialize Swiper -->
+  <script>
+    
+  </script>
+  
   <script src="scripts.js"></script>
 
 </body>
