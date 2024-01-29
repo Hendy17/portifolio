@@ -9,7 +9,7 @@ let swiper = new Swiper(".swiper-mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-});
+});;
 
 let header = document.getElementById('header')
 window.addEventListener('scroll', () => { 
