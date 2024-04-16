@@ -1,0 +1,5 @@
+# Ignorar o arquivo package-lock.json
+package-lock.json
+
+# Ignorar o arquivo package.json
+package.json
