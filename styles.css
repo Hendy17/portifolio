@@ -537,152 +537,140 @@ img {
     margin: 1.5rem;
   }
 }
-
 /*Final da Segunda Paígina*/
 
 /* Seção de Projetos */
+/* Estilos para a seção de Projetos */
 #projects {
-  height: auto;
-  width: 100%;
-  background: var(--color-black);
-  display: flex;
-  flex-direction: column;
+  padding: 50px 0 50px; /* Adicione o espaçamento desejado conforme necessário */
+  background-color: #f9f9f9; /* Cor de fundo alternativa para destacar a seção */
+  position: relative; /* Para posicionar o ícone e o texto */
 }
 
-/* Título dos Projetos */
+.projects-title {
+  position: absolute;
+  top: 10px; /* Ajuste conforme necessário para posicionar mais para cima */
+  left: 25px;
+  color: black; /* Cor do texto */
+  display: flex;
+  align-items: center;
+}
+
 .projects-title h2 {
-  margin-top: 60px;
-  padding: 1rem;
-  font-size: 3rem;
-  color: var(--color-white);
-}
-
-/* Container dos Projetos */
-.container-projects {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Swiper dos Projetos */
-.swiper-mySwiper {
-  max-width: 800px;
-  width: 100%;
-  max-width: 1020px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 500px;
-  margin-top: 2rem;
-  overflow: hidden;
-  margin-left: auto; 
-  margin-right: auto;
-}
-
-/* Cartão de Projeto */
-.card-project {
-  height: 100%;
-  width: 100%;
-  padding: 30px 20px 20px;
-  position: relative;
-  background: var(--color-white);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 20px;
-  overflow: hidden; 
-}
-
-/* Efeito de sobreposição no cartão */
-.card-project::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 40%;
-  width: 100%;
-  background: var(--color-purple);
-  border-radius: 20px 20px 0px 0px;
-  z-index: 1;
-}
-.card-project span {
-  display: block;
-  text-align: center;
-  font-weight: bold;
-  color: black;
   font-size: 1.5rem;
+  margin-left: 10px; /* Adiciona um espaço entre o ícone e o texto */
 }
 
-.card-project p {
-  font-size: 1rem;
-  color: black;
-  font-weight: normal;
+.projects-title i {
+  font-size: 2rem; /* Ajusta o tamanho do ícone conforme necessário */
 }
-.cta-project a {
+
+/* Estilos para o Swiper */
+.swiper-container {
+  white: 100%;
+  max-width: 1200px; /* Defina a largura máxima do container conforme necessário */
+  margin: 0 auto;
+}
+
+.swiper-slide {
   display: flex;
+  justify-content: center;
   align-items: center;
-  text-decoration: none;
-  margin-right: 10px;
-  padding: 5px 10px;
-  margin-right: 10px;
-  color: #ffffff; /* Cor do texto branco */
-  background-color: #800080; /* Cor de fundo roxa */
-  border-radius: 5px;
 }
 
-.cta-project a:hover {
-  background-color: #6a006a; /* Cor de fundo roxa mais escura no hover */
+.wrapper-projects {
+  width: 100%; /* Garanta que ocupe a largura total */
+  max-width: 600px; /* Ajuste conforme necessário */
+  margin: 0 auto;
 }
-
-.cta-project i {
-  margin-left: 5px;
-}
-.cta-project {
+.swiper-button-next,
+.swiper-button-prev {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10; /* Certifique-se de que as setas estejam acima dos projetos */
 }
 
-/* Imagem do Projeto */
-.image-project {
-  max-height: 240px;
-  max-width: 250px;
-  height: 100%;
+.swiper-button-next {
+  right: 10px; /* Posiciona a seta de próxima à direita */
+}
+
+.swiper-button-prev {
+  left: 10px; /* Posiciona a seta de anterior à esquerda */
+}
+
+
+.card-project {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.img-content {
   width: 100%;
-  overflow: hidden;
-  border-radius: 30px;
-  border: 4px solid var(--color-purple);
-  margin: 0 auto; 
-  position: relative;
-  z-index: 2; 
+  text-align: center;
 }
 
-/* Efeito de escala na imagem ao passar o mouse */
-.image-project img {
-  width: 100%;
-  height: 100%; 
-
-  transition: transform 0.3s ease;
+.img-content img {
+  max-width: 100%; /* Garanta que a imagem não ultrapasse o container */
+  height: auto;
+  border-radius: 10px; /* Adicione borda arredondada à imagem */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicione uma sombra sutil */
 }
 
-.image-project:hover img {
-  transform: scale(1.1);
+/* Estilos das setas de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10; /* Certifique-se de que as setas estejam acima dos projetos */
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+/* Estilos da paginação */
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Certifique-se de que a paginação esteja acima dos projetos */
 }
 
 
 @media (max-width: 1000px) {
-  .swiper {
-    max-width: 700px;
+  .container-projects {
+    max-width: 700px; /* Ajuste conforme necessário */
   }
 }
+
 @media (max-width: 700px) {
-  .swiper {
-    max-width: 350px;
+  .container-projects {
+    max-width: 350px; /* Ajuste conforme necessário */
   }
 }
 
