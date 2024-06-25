@@ -543,7 +543,7 @@ img {
 /* Estilos para a seção de Projetos */
 #projects {
   padding: 50px 0 50px; /* Adicione o espaçamento desejado conforme necessário */
-  background-color: #f9f9f9; /* Cor de fundo alternativa para destacar a seção */
+  background-color: black; /* Cor de fundo cinza */
   position: relative; /* Para posicionar o ícone e o texto */
 }
 
@@ -551,7 +551,7 @@ img {
   position: absolute;
   top: 10px; /* Ajuste conforme necessário para posicionar mais para cima */
   left: 25px;
-  color: black; /* Cor do texto */
+  color: white; /* Cor do texto */
   display: flex;
   align-items: center;
 }
@@ -607,6 +607,13 @@ img {
   left: 10px; /* Posiciona a seta de anterior à esquerda */
 }
 
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Certifique-se de que a paginação esteja acima dos projetos */
+}
 
 .card-project {
   background-color: #fff;
@@ -668,9 +675,10 @@ img {
   }
 }
 
-@media (max-width: 700px) {
-  .container-projects {
-    max-width: 350px; /* Ajuste conforme necessário */
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; /* Oculta as setas de navegação em dispositivos móveis */
   }
 }
 
