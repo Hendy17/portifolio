@@ -1,12 +1,11 @@
 // Inicialização do Swiper
 var swiper = new Swiper('.swiper-mySwiper', {
-  slidesPerView: 1, // Define quantos slides serão exibidos simultaneamente
-  spaceBetween: 30, // Define o espaçamento entre os slides
+  slidesPerView: 1,
+  spaceBetween: 30,
   navigation: {
-    nextEl: '.swiper-button-next', // Seletor para o botão "Próximo"
-    prevEl: '.swiper-button-prev', // Seletor para o botão "Anterior"
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
-});
 
 // Adiciona um ouvinte de evento de rolagem à janela
 window.addEventListener('scroll', function() {

@@ -678,9 +678,17 @@ img {
 @media (max-width: 768px) {
   .swiper-button-next,
   .swiper-button-prev {
-    display: none; /* Oculta as setas de navegação em dispositivos móveis */
+    display: flex; /* Mantém as setas visíveis */
+    opacity: 0; /* Inicialmente transparentes */
+    transition: opacity 0.3s; /* Animação suave para a opacidade */
+  }
+
+  .swiper-container:hover .swiper-button-next,
+  .swiper-container:hover .swiper-button-prev {
+    opacity: 1; /* Torna as setas opacas ao passar o mouse/tocar */
   }
 }
+
 
 /*Final do Project*/
 
