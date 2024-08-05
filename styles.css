@@ -19,14 +19,14 @@
 html {
   scroll-behavior: smooth;
   font-size: 10px;
-  background: var(--color-black); 
+  background: var(--color-black);
 }
 
 body {
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
-  margin: 0; 
-  overflow-x: hidden; 
+  margin: 0;
+  overflow-x: hidden;
   font-size: 1rem;
 }
 
@@ -39,15 +39,12 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   width: 100%;
   padding: 15px 30px;
   position: fixed;
   background: transparent;
   transition: all .3s ease;
-
   z-index: 2;
-  
 }
 
 .header-title {
@@ -84,13 +81,12 @@ img {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28155, 155, 155, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-
 #person {
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
-  background: var(--color-black);  
+  background: var(--color-black);
 }
 
 .person-content {
@@ -107,7 +103,7 @@ img {
   color: transparent;
   padding: 0px 35px;
   position: relative;
-  width: fit-content; 
+  width: fit-content;
   font-size: calc(2vw + 1.5rem);
   line-height: calc(3vw + 1.8rem);
   animation: written_text .5s ease forwards;
@@ -125,22 +121,23 @@ img {
 }
 
 .person-content div h1:nth-child(1) {
-  animation-delay: 1s;  
+  animation-delay: 1s;
 }
 
 .person-content div h1:nth-child(2) {
-  animation-delay: 2s;  
+  animation-delay: 2s;
 }
 
-.person-content div h1:nth-child(3) {     
-  animation-delay: 3s;
-}
-.person-content div h1:nth-child(4) { 
-  animation: written_text_name .5s ease forwards;   
+.person-content div h1:nth-child(3) {
   animation-delay: 3s;
 }
 
-.person-content div h1:nth-child(1) span {  
+.person-content div h1:nth-child(4) {
+  animation: written_text_name .5s ease forwards;
+  animation-delay: 3s;
+}
+
+.person-content div h1:nth-child(1) span {
   animation-delay: .5s;
 }
 
@@ -151,6 +148,7 @@ img {
 .person-content div h1:nth-child(3) span {
   animation-delay: 2.5s;
 }
+
 .person-content div h1:nth-child(4) span {
   animation-delay: 3s;
 }
@@ -158,21 +156,18 @@ img {
 .person-name {
   margin-top: 11rem;
   padding: 0px 20px;
-  
 }
 
 .stacks-content {
-  display: flex;  
+  display: flex;
   justify-content: center;
-  flex-direction: 5rem 0rem 2rem;
   flex-direction: column;
-  
-  padding: 0px 20px;  
+  padding: 0px 20px;
 }
 
 .stacks-content h3 {
   color: var(--color-white);
-  font-size: calc(.85vw +.5rem);
+  font-size: calc(.85vw + .5rem);
   margin-left: 20px;
 }
 
@@ -188,16 +183,14 @@ img {
   align-items: center;
   margin-top: 10px;
   padding: 10px;
-  position: relative; 
+  position: relative;
   list-style: none;
 }
 
-.stacks li img { 
+.stacks li img {
   height: auto;
   width: calc(3.5vw + 0.5rem);
-  
   transition: transform .3s ease;
-  
 }
 
 .stacks li img:hover {
@@ -214,18 +207,17 @@ img {
   height: 20px;
   color: var(--color-white);
   font-size: 1.30vh;
-  
-  
-
-@media (max-width: 376px) {
-.person-name {
-  padding: 0px 10px;
 }
+
+@media (max-width: 768px) {
+  .person-name {
+    padding: 0px 10px;
+  }
 
   .stacks-content {
     padding: 0px 10px;
   }
-  
+
   .stacks-content h3 {
     margin-left: 10px;
   }
@@ -237,8 +229,8 @@ img {
   .stacks li {
     margin: 0px;
   }
-  
-  .stacks li imag {
+
+  .stacks li img {
     width: calc(3.5vw + 5rem);
   }
 }
@@ -248,9 +240,11 @@ img {
   .person-name {
     padding: 0px 10px;
   }
+
   .stacks-content {
     padding: 0px 15px;
   }
+
   .stacks-content h3 {
     margin-left: 10px;
   }
@@ -278,21 +272,16 @@ img {
   }
 }
 
-}
-
-.person-background {  
+.person-background {
   height: 100vh;
   width: 100%;
-  display: flex;  
+  display: flex;
   justify-content: center;
   align-items: center;
-  
   position: relative;
   flex-direction: column;
-
   background-image: url(./img/img1.jpg);
   background-size: cover;
-
   z-index: 1;
 }
 
@@ -301,13 +290,10 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-
   height: 100%;
   width: 100%;
-
   opacity: .7;
   z-index: -1;
-
   background:
     linear-gradient(90deg, transparent 30%, var(--color-black)),
     linear-gradient(180deg, transparent 30%, var(--color-black)),
@@ -319,29 +305,28 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  overflow: hidden; 
-  max-width: 300px; 
+  overflow: hidden;
+  max-width: 300px;
   padding: calc(1vw + 0.2rem);
   margin: 20px 15px;
   background:
-    radial-gradient(rgba(0,0,0,0.15) 60%, transparent 0),
+    radial-gradient(rgba(0, 0, 0, 0.15) 60%, transparent 0),
     radial-gradient(#000 68%, transparent 0),
     linear-gradient(to top right, #ffa500 0%, #ff1493 100%);
 }
 
-.wrapper-profile-photo img {  
+.wrapper-profile-photo img {
   height: auto;
   border-radius: 50%;
-  width: 100%;   
+  width: 100%;
 }
 
-.Links a img {  
+.Links a img {
   width: calc(2vw + 0.8rem);
   height: calc(2vw + 0.8rem);
   margin: calc(0.8vw + 0.8rem);
   filter: brightness(.8);
   transition: all .3s ease;
- 
 }
 
 .Links a img:hover {
@@ -353,10 +338,9 @@ img {
   .Links a img {
     width: 20px;
     height: 20px;
-    
-    
   }
 }
+
 @media (max-width: 1440px) and (orientation: landscape) {
   .wrapper-profile-photo {
     width: 45vw;
@@ -370,15 +354,13 @@ img {
   }
 }
 
-/* Final da Primeira Paigina */
-
 #about {
   height: auto;
   width: 100%;
   background: var(--color-black);
-  
   display: flex;
-  color: var(--color-white);  
+  color: var(--color-white);
+  flex-direction: column; /* Make the flex direction column for better responsiveness */
 }
 
 .backgrond-about {
@@ -386,13 +368,13 @@ img {
   height: 50vh;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
 .img-wrapper {
   height: 100%;
   width: 100%;
-  position: relative;  
+  position: relative;
 }
 
 .img-wrapper::after {
@@ -400,15 +382,13 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;
   height: 100%;
-
-  background: 
+  background:
     linear-gradient(.25turn, transparent 30%, var(--color-black)),
     linear-gradient(.5turn, transparent 30%, var(--color-black)),
     linear-gradient(1turn, transparent 65%, var(--color-black));
 }
-
 
 .img-wrapper img {
   max-width: 100%;
@@ -420,31 +400,31 @@ img {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 50%; 
+  width: 100%;
   padding: 3rem;
   margin: 6rem 0rem;
 }
 
-.sectio-subtitle h2 p {
-  display: inline-block;  
-  font-size: calc(1.4vw + 1.2rem); 
+.section-subtitle h2 p {
+  display: inline-block;
+  font-size: calc(1.4vw + 1.2rem);
 }
 
-.sectio-subtitle h2 p:nth-child(2) span {
+.section-subtitle h2 p:nth-child(2) span {
   padding: 3px 5px;
   border-radius: 4px;
   color: var(--color-black);
   background: var(--color-white);
 }
+
 .box-about h3 {
-  margin: 3rem; 
+  margin: 3rem;
   font-size: calc(.8vw + .8rem);
-  
 }
 
 .box-about p {
   display: inline-block;
-  width: fir-content;
+  width: fit-content;
   padding: 2px 4px;
   border-radius: 4px;
   color: var(--color-black);
@@ -454,28 +434,25 @@ img {
 
 .box-about h4 {
   margin: 1rem 3rem;
-  font-size: calc(.8vw + .8rem);   
+  font-size: calc(.8vw + .8rem);
 }
 
-.box-about h4 p {  
+.box-about h4 p {
   display: inline;
   padding: 2px 4px;
-  border: 2px solid var(--color-blue);   
+  border: 2px solid var(--color-blue);
 }
- 
 
 .button-cta {
   display: flex;
-  max-width: 190%;
-  margin: 4rem 3rem;  
+  max-width: 100%;
+  margin: 4rem 3rem;
 }
 
 .button-cta a {
   display: inline-block;
   padding: calc(0.2vw + 0.8rem) calc(2vw + 0.8rem);
   margin-bottom: 3rem;
-   
-  
   font-size: calc(.7vw + .55rem);
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -486,7 +463,7 @@ img {
   text-decoration: none;
   border-radius: 10px;
   cursor: pointer;
-} 
+}
 
 .button-cta a:hover {
   width: 100%;
@@ -498,12 +475,15 @@ img {
   .box-about {
     padding: 1.3rem;
   }
+
   .section-subtitle p {
     font-size: 2rem;
   }
+
   .box-about h3 {
     margin: 1.5rem 1rem;
   }
+
   .box-about h4 {
     margin: 1.5rem;
   }
@@ -513,65 +493,68 @@ img {
   .box-about {
     padding: 1rem;
   }
+
   .section-subtitle p {
     font-size: 2rem;
   }
-  .box-about h3 {    
+
+  .box-about h3 {
     margin: 3rem 1rem;
     font-size: calc(.8vw + 8rem);
   }
-  .box-about h4 {    
-    margin: 1.5rem;    
-  }  
-}
 
-@media (min-weight: 768) end (max-weight: 1440px) {
-  .box-about {
-    padding: 1.8rem;
-    
-  }
-  .sectio-subtitle p {
-    font-size: 2.5rem;    
-  }   
-  .box-about h3 {
-    margin: 2rem 1rem;    
-  }
   .box-about h4 {
     margin: 1.5rem;
   }
 }
-/*Final da Segunda Paígina*/
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .box-about {
+    padding: 1.8rem;
+  }
+
+  .section-subtitle p {
+    font-size: 2.5rem;
+  }
+
+  .box-about h3 {
+    margin: 2rem 1rem;
+  }
+
+  .box-about h4 {
+    margin: 1.5rem;
+  }
+}
 
 /* Seção de Projetos */
-/* Estilos para a seção de Projetos */
 #projects {
-  padding: 50px 0 50px; /* Adicione o espaçamento desejado conforme necessário */
-  background-color: black; /* Cor de fundo cinza */
-  position: relative; /* Para posicionar o ícone e o texto */
+  padding: 50px 0;
+  background-color: black;
+  position: relative;
 }
 
 .projects-title {
   position: absolute;
-  top: 10px; /* Ajuste conforme necessário para posicionar mais para cima */
+  top: 10px;
   left: 25px;
-  color: white; /* Cor do texto */
+  color: white;
   display: flex;
   align-items: center;
 }
 
 .projects-title h2 {
   font-size: 1.5rem;
-  margin-left: 10px; /* Adiciona um espaço entre o ícone e o texto */
+  margin-left: 10px;
 }
 
 .projects-title i {
-  font-size: 2rem; /* Ajusta o tamanho do ícone conforme necessário */
+  font-size: 2rem;
 }
 
 /* Estilos para o Swiper */
 .swiper-container {
-  white: 100%;
-  max-width: 1200px; /* Defina a largura máxima do container conforme necessário */
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -582,10 +565,11 @@ img {
 }
 
 .wrapper-projects {
-  width: 100%; /* Garanta que ocupe a largura total */
-  max-width: 600px; /* Ajuste conforme necessário */
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
@@ -599,15 +583,15 @@ img {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 10; /* Certifique-se de que as setas estejam acima dos projetos */
+  z-index: 10;
 }
 
 .swiper-button-next {
-  right: 10px; /* Posiciona a seta de próxima à direita */
+  right: 10px;
 }
 
 .swiper-button-prev {
-  left: 10px; /* Posiciona a seta de anterior à esquerda */
+  left: 10px;
 }
 
 .swiper-pagination {
@@ -615,7 +599,7 @@ img {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10; /* Certifique-se de que a paginação esteja acima dos projetos */
+  z-index: 10;
 }
 
 .card-project {
@@ -631,86 +615,39 @@ img {
 }
 
 .img-content img {
-  max-width: 100%; /* Garanta que a imagem não ultrapasse o container */
+  max-width: 100%;
   height: auto;
-  border-radius: 10px; /* Adicione borda arredondada à imagem */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicione uma sombra sutil */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-/* Estilos das setas de navegação */
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index: 10; /* Certifique-se de que as setas estejam acima dos projetos */
-}
-
-.swiper-button-next {
-  right: 10px;
-}
-
-.swiper-button-prev {
-  left: 10px;
-}
-
-/* Estilos da paginação */
-.swiper-pagination {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10; /* Certifique-se de que a paginação esteja acima dos projetos */
-}
-
 
 @media (max-width: 1000px) {
   .container-projects {
-    max-width: 700px; /* Ajuste conforme necessário */
+    max-width: 700px;
   }
 }
 
 @media (max-width: 768px) {
   .swiper-button-next,
   .swiper-button-prev {
-    display: flex; /* Mantém as setas visíveis */
-    opacity: 0; /* Inicialmente transparentes */
-    transition: opacity 0.3s; /* Animação suave para a opacidade */
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
 
   .swiper-container:hover .swiper-button-next,
   .swiper-container:hover .swiper-button-prev {
-    opacity: 1; /* Torna as setas opacas ao passar o mouse/tocar */
+    opacity: 1;
   }
 }
 
-
-/*Final do Project*/
-
-#contacts-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; 
-  width: 100%;
-}
-
+/* Seção de Contatos */
 #contacts {
   display: flex;
-  flex-direction: column;  
-  
-  height: 40vh;
-  width:100%;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
   margin: 3vw 0vw 5vw;
-
   background: var(--color-black);
 }
 
@@ -726,6 +663,7 @@ img {
   align-items: center;
   flex-direction: row;
   font-size: 3rem;
+  flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
 }
 
 .contact-icon-contact {
@@ -778,23 +716,28 @@ img {
   color: var(--color-blue);
 }
 
-@media (min-width: 1840px )  {
+@media (min-width: 1840px) {
   .contact-icon-content h2 {
     font-size: calc(1.4vw + 1.8rem);
   }
+
   .contact-icon {
     width: 3vw;
     height: 3vw;
   }
+
   .contact-icon i {
     font-size: 1vw;
   }
+
   .contact-info span {
     font-size: 1.1vw;
   }
+
   .contact-info p {
     font-size: 0.7vw;
   }
+
   .contact-info a {
     font-size: 0.7vw;
   }
@@ -805,7 +748,7 @@ img {
   width: 100%;
   padding: calc(3vw + 1rem) 0vw;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
   margin-top: auto;
   background: #191919;
@@ -823,16 +766,16 @@ img {
   .container-footer h2 {
     font-size: calc(1vw + .2rem);
   }
+
   .container-footer h3 {
     font-size: .8vw;
-  } 
+  }
 }
-
 
 @keyframes written_text {
   100% {
     color: var(--color-white);
-  } background: color(--var-black); 
+  }
 }
 
 @keyframes written_text_name {
@@ -847,8 +790,9 @@ img {
     width: 100%;
     left: 0;
   }
+
   100% {
     width: 0;
     left: 100%;
-  } 
+  }
 }
