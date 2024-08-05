@@ -63,24 +63,27 @@ img {
   opacity: .8;
 }
 
-.navbar {
-  max-width: 350px;
-  width: 100%;
+.navbar-custom {
+  background-color: black;
 }
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: white;
 }
 
-.navbar ul li a {
-  text-decoration: none;
-  color: var(--color-white);
-  font-size: 1.4rem;
-  font-weight: 700;
+.navbar-custom .nav-link.active {
+  color: white;
 }
+
+.navbar-custom .navbar-toggler {
+  border-color: white;
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28155, 155, 155, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 
 #person {
   height: 100vh;
