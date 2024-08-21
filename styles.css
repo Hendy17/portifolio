@@ -353,178 +353,98 @@ img {
     max-width: initial;
   }
 }
-
 #about {
-  height: auto;
-  width: 100%;
-  background: var(--color-black);
-  display: flex;
-  color: var(--color-white);
-  flex-direction: column; /* Make the flex direction column for better responsiveness */
+  background-color: #000;
+  color: #fff;
+  padding: 4rem 2rem;
 }
 
-.backgrond-about {
-  width: 100%;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.img-wrapper {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
-.img-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background:
-    linear-gradient(.25turn, transparent 30%, var(--color-black)),
-    linear-gradient(.5turn, transparent 30%, var(--color-black)),
-    linear-gradient(1turn, transparent 65%, var(--color-black));
-}
-
-.img-wrapper img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.box-about {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  padding: 3rem;
-  margin: 6rem 0rem;
-}
-
-.section-subtitle h2 p {
-  display: inline-block;
-  font-size: calc(1.4vw + 1.2rem);
-}
-
-.section-subtitle h2 p:nth-child(2) span {
-  padding: 3px 5px;
-  border-radius: 4px;
-  color: var(--color-black);
-  background: var(--color-white);
-}
-
-.box-about h3 {
-  margin: 3rem;
-  font-size: calc(.8vw + .8rem);
-}
-
-.box-about p {
-  display: inline-block;
-  width: fit-content;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: var(--color-black);
-  background: var(--color-blue);
-  font-size: calc(.8vw + .8rem);
-}
-
-.box-about h4 {
-  margin: 1rem 3rem;
-  font-size: calc(.8vw + .8rem);
-}
-
-.box-about h4 p {
-  display: inline;
-  padding: 2px 4px;
-  border: 2px solid var(--color-blue);
-}
-
-.button-cta {
-  display: flex;
-  max-width: 100%;
-  margin: 4rem 3rem;
-}
-
-.button-cta a {
-  display: inline-block;
-  padding: calc(0.2vw + 0.8rem) calc(2vw + 0.8rem);
-  margin-bottom: 3rem;
-  font-size: calc(.7vw + .55rem);
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.15rem;
-  color: var(--color-black);
-  background: var(--color-white);
-  text-align: center;
-  text-decoration: none;
+/* Card */
+#about .card {
+  background-color: #222;
   border-radius: 10px;
-  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.button-cta a:hover {
-  width: 100%;
-  transition: all 3s ease;
-  filter: brightness(0.8);
+/* Títulos e textos */
+#about .card-title {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
-  .box-about {
-    padding: 1.3rem;
+#about h2, #about h3, #about h4 {
+  margin: 1rem 0;
+}
+
+#about .card-text p {
+  margin: 0.5rem 0;
+}
+
+/* Botão personalizado */
+#about .btn.custom-btn {
+  background-color: #007bff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#about .btn.custom-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Rodapé do card */
+#about .card-footer {
+  font-size: 0.875rem;
+  color: #aaa;
+}
+
+/* Responsividade específica */
+@media (max-width: 768px) {
+  /* Reduzindo os tamanhos de fonte em telas menores */
+  #about .card-title {
+      font-size: 1.5rem;
   }
 
-  .section-subtitle p {
-    font-size: 2rem;
+  #about h2, #about h3, #about h4 {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
   }
 
-  .box-about h3 {
-    margin: 1.5rem 1rem;
+  /* Ajuste de padding do botão em telas menores */
+  #about .btn.custom-btn {
+      padding: 0.5rem 1rem;
+  }
+  
+  /* Redução das margens e padding do card */
+  #about {
+      padding: 2rem 1rem;
   }
 
-  .box-about h4 {
-    margin: 1.5rem;
+  /* Ajuste da altura e largura da imagem no background */
+  .img-wrapper img {
+      height: auto;
+      width: 100%;
+      object-fit: cover;
   }
 }
 
-@media (max-width: 375px) {
-  .box-about {
-    padding: 1rem;
+@media (max-width: 576px) {
+  /* Ajustes adicionais para telas muito pequenas */
+  #about .card-title {
+      font-size: 1.2rem;
   }
 
-  .section-subtitle p {
-    font-size: 2rem;
-  }
-
-  .box-about h3 {
-    margin: 3rem 1rem;
-    font-size: calc(.8vw + 8rem);
-  }
-
-  .box-about h4 {
-    margin: 1.5rem;
+  #about h2, #about h3, #about h4 {
+      font-size: 1rem;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
-  .box-about {
-    padding: 1.8rem;
-  }
 
-  .section-subtitle p {
-    font-size: 2.5rem;
-  }
 
-  .box-about h3 {
-    margin: 2rem 1rem;
-  }
 
-  .box-about h4 {
-    margin: 1.5rem;
-  }
-}
+
 
 /* Seção de Projetos */
 #projects {
